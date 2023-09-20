@@ -6,17 +6,22 @@ void itc_num_print(int number){
 }  //1
 
 int itc_len_num(long long number){
-    long long s = 10, p=0;
-    s = number;
-    while(s!=0){
-        s = s/10;
+    int p=0;
+    while(number!=0){
+        number = number/10;
         p+=1;
+    }
+    if (p==0){
+        return 1;
     }
     return p;
 
 }   //2
 
 int itc_sum_num(long long number){
+if (number<0){
+    number = number*(-1)
+}
 long long s = 10, p=0, h;
     s = number;
     while(s!=0){
