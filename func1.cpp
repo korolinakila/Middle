@@ -33,6 +33,9 @@ long long s = 10, p=0, h;
 }   //3
 
  long long itc_multi_num(long long number){
+if (number<0){
+    number = number*(-1);
+ }
  long long s = 10, p=1, h;
     s = number;
     while(s!=0){
