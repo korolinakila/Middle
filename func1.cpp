@@ -20,7 +20,7 @@ int itc_len_num(long long number){
 
 int itc_sum_num(long long number){
 if (number<0){
-    number = number*(-1)
+    number = number*(-1);
 }
 long long s = 10, p=0, h;
     s = number;
