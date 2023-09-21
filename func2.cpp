@@ -7,6 +7,9 @@ long long s = 10, p=9, h;
     if(number<0){
         number = number*(-1);
     }
+    if(number==-9223372036854775808){
+        return(0);
+    }
     s = number;
     while(s!=0){
         h = s%10;
