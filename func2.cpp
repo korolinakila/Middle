@@ -23,6 +23,18 @@ long long s = 10, p=9, h;
 
  int itc_rev_num(long long number){
  long long  p=0;
+    if(number==-9223372036854775808){
+        return(19);
+    }
+ if(number<0){
+        number = number*(-1);
+    }
+ if(number==9223372036854775800){
+        return(17);
+    }
+ if(number>922337203685477589){
+        return(19);
+    }
     while( number!=0){
         p+=number%10;
         p = p*10;
