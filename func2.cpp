@@ -3,13 +3,14 @@
 using namespace std;
 
 int itc_min_num(long long number){
-long long s = 10, p=9, h;
+long long s, p=9, h;
+    if(number==-9223372036854775808 || number == 0){
+        return(0);
+    }
     if(number<0){
         number = number*(-1);
     }
-    if(number==-9223372036854775808){
-        return(0);
-    }
+
     s = number;
     while(s!=0){
         h = s%10;
