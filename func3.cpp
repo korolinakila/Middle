@@ -4,6 +4,9 @@ using namespace std;
 
 int itc_second_max_num(long long number){
  long long s = 10, p=0, h, g=0;
+    if(number==-9223372036854775808){
+       return 8;
+    }
     if(number<0){
         number = number*(-1);
     }
