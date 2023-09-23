@@ -46,12 +46,14 @@ long long s, p=9, h;
 
 int itc_null_count(long long number){
     int p=0;
-    while(number!=0){
+    if (number==0){
+        return 1;
+    }
+    for(int i = itc_len_num(number); i>0;i-=1){
         if(number%10==0){
             p+=1;
         }
         number = number/10;
-
     }
     return p;
 
