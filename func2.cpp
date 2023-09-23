@@ -69,22 +69,24 @@ s=number;
 }   //9
 
  int itc_mirror_count(long long number){
-    long long  p=0, h=0, f;
+    long long  p=0;
     if (number<0){
-            number=number*(-1);}
-    for(int i=1; i!=number; i++){
-        f=i;
-        p=0;
-        while( f!=0){
-            p+=f%10;
-            p = p*10;
-            f = f/10;
+        for(long long i=1; i!=number; i-=1){
+        if (itc_mirror_num(i)==1){
+                p+=1;
         }
-        p = p/10;
-        if (p==i){
-            h+=1;
-        }
+
     }
-    return h;
+    return p;
+    }
+    for(long long i=1; i!=number; i++){
+        if (itc_mirror_num(i)==1){
+                p+=1;
+        }
+
+    }
+    return p;
+
+
 }   //10
 
