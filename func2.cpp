@@ -80,7 +80,7 @@ s=number;
     return p;
     }
     if (number>=0){
-    for(long long i=0; i!=number; i++){
+    for(long long i=1; i!=number+1; i++){
         if (itc_mirror_num(i)==1){
                 p+=1;
         }
