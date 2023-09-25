@@ -16,7 +16,7 @@ int itc_second_max_num(long long number){
     s = number;
     while(s!=0){
         h = s%10;
-        if(h>p){
+        if(h>=p){
             g=p;
             p=h;
         }
