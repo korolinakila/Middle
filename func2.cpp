@@ -71,7 +71,7 @@ s=number;
  int itc_mirror_count(long long number){
     long long  p=0;
     if (number<0){
-        for(long long i=1; i!=number; i-=1){
+        for(long long i=0; i!=number; i-=1){
         if (itc_mirror_num(i)==1){
                 p+=1;
         }
@@ -79,7 +79,7 @@ s=number;
     }
     return p;
     }
-    for(long long i=1; i!=number; i++){
+    for(long long i=0; i!=number; i++){
         if (itc_mirror_num(i)==1){
                 p+=1;
         }
