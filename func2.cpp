@@ -79,6 +79,7 @@ s=number;
     }
     return p;
     }
+    if (number>=0){
     for(long long i=0; i!=number; i++){
         if (itc_mirror_num(i)==1){
                 p+=1;
@@ -86,7 +87,7 @@ s=number;
 
     }
     return p;
-
-
+    }
+    return 0;
 }   //10
 
